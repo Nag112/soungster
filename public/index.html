@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Nagacharan">
+	<!-- Page Title -->
+	<title>Soungster</title>
+	<!-- Google Fonts css-->
+	<link rel="icon" href="images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	<!-- Bootstrap css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+	<!-- Coming Soon Wrapper -->
+	<div class="comming-soon">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 position-static">
+					<div class="comming-soon-info">
+						<div class="comming-soon-info-inner">
+							<h2>Stay Tuned <span>We are launching soon.</span></h2>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Keep Informed form start -->
+				<div class="col-md-6">
+					<div class="contact-form">
+						<h2 class="title">Keep Informed</h2>
+						<p>Subscribe now, We will let you know launch dates as soon as possible</p>
+												
+							<div class="form-group">
+								<input type="text" class="form-control text-user" name="name" placeholder="ENTER YOUR NAME" />
+							</div>
+							
+							<div class="form-group">
+								<input type="text" class="form-control text-email" name="email" id="email" placeholder="ENTER YOUR EMAIL" />
+							</div>
+							
+							<div class="form-group">
+								<input type="submit" name="submit" value="Subscribe Now" class="btn-contact" onClick="validateForm()"/>
+							</div>
+							<div class="g-recaptcha"
+      data-sitekey="6Lfk2qUZAAAAAOPBKTIiIGDtpLPrSTF7fmPfSWid"
+      data-callback="onSubmit"
+      data-size="invisible">
+</div>					
+					</div>
+				</div>
+				<!-- Keep Informed form end -->
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="./js/validate.js"></script>
+</html>

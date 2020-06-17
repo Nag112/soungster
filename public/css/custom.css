@@ -1,0 +1,334 @@
+
+html{
+	height: 100%;
+}
+
+body{
+	font-size: 16px;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin:0;
+	font-weight: 700;
+}
+
+img{
+	max-width: 100%;
+}
+
+a:hover{
+	text-decoration: none;
+	outline: 0;
+}
+
+a:focus{
+	text-decoration: none;
+	outline: 0;
+}
+
+
+.comming-soon{
+	background: url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	position: relative;
+	min-height: 100%;
+	display: flex;
+    align-items: center;
+}
+
+.comming-soon:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.60);
+}
+
+.comming-soon .row{
+	position: relative;
+}
+
+.countdown-timer-wrapper{
+	text-align: center;
+}
+
+.timer .timer-wrapper{
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	vertical-align: top;
+}
+
+.timer .timer-wrapper .time{
+	font-size: 46px;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1em;
+}
+
+.timer .timer-wrapper .text{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.position-static{
+	position: static;
+}
+
+.comming-soon-info{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+
+.comming-soon-info-inner{
+	width: 100%;
+}
+
+.comming-soon-info h2{
+	font-size: 44px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 1.4em;
+}
+
+.comming-soon-info h2 span{
+	display: block;
+	font-weight: 700;
+}
+
+.launch-date{
+	margin: 20px 0;
+	background: rgba(255,255,255,0.15);
+	padding: 10px 20px 10px 0;
+	position: relative;
+}
+
+.launch-date:before{
+	content: '';
+	width: 1000px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -1000px;
+	background: rgba(255,255,255,0.15);
+}
+
+.opening-date{
+	display: inline-block;
+	margin-right: -5px;
+	vertical-align: middle;
+	padding-right: 20px;
+	border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.opening-date p{
+	font-size: 28px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.opening-date p span{
+	display: block;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+}
+
+.countdown-timer-wrapper{
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+
+.timer .timer-wrapper .time{
+	display: inline-block;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.timer .timer-wrapper .text{
+	display: inline-block;
+	font-weight: 400;
+	padding-right: 6px;
+}
+
+.btn-intro{
+	position: relative;
+	padding: 14px 0;
+	padding-left: 70px;
+	margin-top: 40px;
+}
+
+.btn-intro .icon-box{
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	border-radius: 50%;
+	width: 52px;
+	height: 52px;
+	background: #f4605c;
+	padding-top: 12px;
+	padding-left: 4px;
+	font-size: 20px;
+}
+
+.btn-intro a{
+	color: #fff;
+}
+
+.contact-form{
+	background: #fff;
+	padding: 50px 40px;
+	max-width: 360px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title{
+	color: #232323;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.contact-form p{
+	font-size: 13px;
+	color: #918989;
+}
+
+.contact-form form{
+	margin-top: 40px;
+}
+
+.contact-form .form-group{
+	margin-bottom: 20px;
+}
+
+.contact-form .form-control{
+	height: auto;
+	border-radius: 40px;
+	border: 1px solid #dedada;
+	box-shadow: none;
+	padding: 10px 20px 10px 46px;
+	font-size: 14px;
+}
+
+.text-user{
+	background: #f8f8fb url(../images/user.png) no-repeat left 10px center;
+}
+
+.text-email{
+	background: #f8f8fb url(../images/email.png) no-repeat left 12px center;
+}
+
+.btn-contact{
+	border: none;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 500;
+	background: #f4605c;
+	text-transform: uppercase;
+	padding: 13px 30px;
+	border-radius: 40px;
+	margin-top: 20px;
+	transition: all 0.3s;
+}
+
+.btn-contact:hover{
+	background: #212121;
+}
+
+
+/****************************************
+		Responsive Media Query
+****************************************/
+
+@media only screen and (max-width:991px){	
+	.comming-soon-info{
+		position: relative;
+		padding: 40px 0;
+	}
+
+}
+
+@media only screen and (max-width:768px){
+	.comming-soon-info h2{
+		font-size: 28px;
+	}
+	
+	.comming-soon{
+		display: block;
+		text-align: center;
+	}
+	
+	.opening-date{
+		display: block;
+		border-right: 0;
+		border-bottom: 1px solid rgba(255,255,255,0.2);
+	}
+	
+	.countdown-timer-wrapper{
+		display: block;
+		margin-top: 20px;
+	}
+	
+	.btn-intro{
+		max-width: 240px;
+		margin: 30px auto 20px;
+	}
+	
+	.launch-date{
+		padding: 20px;
+	}
+	
+	.launch-date:before{
+		display: none;
+	}
+	
+	.contact-form{
+		margin: 0 auto 60px;
+	}
+}
+
+@media only screen and (max-width:480px){
+	.comming-soon-info h2{
+		font-size: 22px;
+	}
+	
+	.countdown-timer-wrapper{
+		line-height: 2.5em;
+		padding-left: 0;
+	}
+	
+	.contact-form{
+		padding: 40px 30px;
+	}
+	
+	.timer .timer-wrapper .time{
+		font-size: 20px;
+	}
+
+	.timer .timer-wrapper .text{
+		font-size: 12px;
+	}
+}
